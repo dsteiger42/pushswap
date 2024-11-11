@@ -1,9 +1,21 @@
-#include "pushswap.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   rev_rotate.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dsteiger <dsteiger@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/11 15:59:37 by dsteiger          #+#    #+#             */
+/*   Updated: 2024/11/11 16:13:20 by dsteiger         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "push_swap.h"
 
 static void	rev_rotate(node **stack)
 {
-	t_list	*temp;
-	t_list	*end;
+	node	*temp;
+	node	*end;
 
 	if (!(*stack) || !((*stack)->next))
 		return ;
